@@ -1,0 +1,13 @@
+.menu-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-item{
+  width: 300px;
+}
+.photo{
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
