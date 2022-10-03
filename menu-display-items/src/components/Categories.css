@@ -1,0 +1,18 @@
+.categories-box{
+    margin-top: 25px;
+}
+.categorie-btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-inline: 20px;
+    background: none;
+    color: #C59D5F;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+@media screen and (max-width:556px){
+    .categorie-btn{
+        padding-inline: 6px;
+    }
+}

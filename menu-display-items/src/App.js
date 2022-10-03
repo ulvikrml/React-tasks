@@ -1,8 +1,8 @@
 import './App.css';
 import menu from './data';
-import Categories from './Categories';
-import Menu from './Menu';
-import { useState } from 'react'
+import Categories from './components/Categories';
+import Menu from './components/Menu';
+import { useState } from 'react';
 
 function App() {
   const [items, setItems] = useState(menu);
@@ -12,7 +12,7 @@ function App() {
     setItems(menu.filter(item => item.category === categorie))
   }
   return (
-    <div>
+    <div className='main'>
       <div className="title">
         <h2>Our Menu</h2>
       </div>

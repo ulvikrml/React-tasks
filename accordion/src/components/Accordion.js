@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import questions from '../data';
 import Question from './Question';
+import './Accordion.css';
 
 const Accordion = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -11,7 +12,7 @@ const Accordion = () => {
         setIsOpen(isActiveID);
     }
     return (
-        <div>
+        <div className='accordion-box'>
             {questions.map(question => {
                 return <Question key={question.id} data={question} isOpen={isOpen === question.id} questionHandler={questionHandler}/>
             })}
